@@ -29,7 +29,7 @@ gulp.task('styles', function() {
 });
 
 gulp.task('build', function(done) {
-  run_sequence('clean', ['markup', 'compile', 'styles', 'test'], done);
+  run_sequence('clean', ['markup', 'compile', 'styles'], done);
 });
 
 gulp.task('test', () =>
